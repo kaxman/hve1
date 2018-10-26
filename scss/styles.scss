@@ -1,0 +1,57 @@
+@import "config";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, Verdana, serif;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+button{
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+button:hover{
+  background-color: #000;
+  color: $cUglyPink;
+  
+}
+
+button {
+  background: $cUglyPink;
+  border-radius: 4px;
+  text-align: left;
+}
+@import "header";
+@import "cards";
+@import "prod_cards";
+@import "cart";
+@import "staff";
+@import "footer";
+

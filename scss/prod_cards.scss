@@ -1,0 +1,78 @@
+.prod__card-list{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: $abs-max-width;
+  margin: 0 auto;
+}
+.prod__card{
+  display:flex;
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+    width:100%;
+    padding-bottom: $gutter/2;
+  }
+  @media screen and (min-width:500px) and (max-width:800px){
+    flex-direction: column;
+    width:50%;
+    padding-right:($gutter/2);
+    padding-left:($gutter/2);
+    margin-top:($gutter*2);
+  }  
+  @media screen and (min-width:800px){
+    flex-direction: column;   
+    width:33.33%;
+    padding-right:($gutter/2);
+    padding-left:($gutter/2);
+    margin-top:($gutter*2);
+  }
+}
+.prod__image img{
+  width:100%;
+}
+.prod__card-content{
+  flex-grow:1;
+}
+.prod__price{
+  font-size:2em;
+  font-weight: bolder;
+
+  margin-top:(1.5*$gutter);
+  margin-bottom:($gutter/2);
+
+}
+.prod__card-footer{
+  width:100%;
+}
+.prod__card-footer form{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.prod__card-footer label{
+  width:100%;
+}
+.prod__card-footer input[type=number]{
+  width:60%;
+  border: 2px solid #000;
+  border-radius:4px;
+  height:(2*$gutter);
+}
+.prod__card-footer input[type=submit]{
+  width:40%;
+  background:transparent;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-image: url(img/cart.svg);
+  background-position: 5% 50%;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  padding-left: $gutter;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.prod__card-footer input[type=submit]:hover{
+  background-color: $cUglyPink;
+  border: 2px solid $cUglyPink;
+}

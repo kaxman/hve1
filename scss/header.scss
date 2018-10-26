@@ -1,0 +1,54 @@
+.header__bg{
+    background: $cUglyGreen;
+    background-size: 100vw;
+}
+
+.header {
+    max-width: $abs-max-width;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin:0 auto;
+    padding-bottom:$gutter;
+}
+.header__container{
+    max-width: $abs-max-width;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom:$gutter;
+    font-weight:bold;
+}
+  .nav__left{
+    display: flex;
+    width:33.33vw;
+  }
+  .nav__menu{
+    display:flex;
+    flex-direction: row;
+ 
+    align-self: center;
+    justify-content: center;
+    width:33.33vw;
+  }
+  .nav__menu ul{
+    display:flex;
+    list-style-type: none;
+  
+  }
+  .nav__menu li {
+    flex-direction: row;
+    margin: 0 $gutter 0 $gutter;
+  }
+  .nav__right{
+    display: flex;
+    width:33.33vw
+  }
+  .cart__link{
+    margin-left:auto;
+    padding-left:$gutter;
+    background-image: url(img/cart.svg);
+    background-position: 0px 50%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+  }
+  

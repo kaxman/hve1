@@ -1,0 +1,83 @@
+.card__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: $abs-max-width;
+    margin: 0 auto;
+    
+  }
+  
+.card__list .card__item{
+  display: flex;
+  
+  @media screen and (max-width: 800px){
+    flex-direction: column;
+  }
+  @media screen and (min-width:800px) and (max-width:1200px){
+    flex-direction: row;
+  }  
+  @media screen and (min-width:1200px){
+    flex-direction: row;   
+  }
+}
+.card__item:nth-child(2){
+    @media screen and (min-width:800px) {
+      flex-direction: row-reverse;
+    }
+}
+.card__item{
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+}
+
+.card__content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $gutter $gutter $gutter $gutter;
+  @media screen and (max-width: 800px){
+    width:100vw;
+  }
+  @media screen and (min-width:800px) and (max-width:1200px){
+    width:50vw;
+  }  
+  @media screen and (min-width:1200px){
+    width:600px;
+  }  
+}
+.card__content button{
+    width:fit-content;
+    padding: 1em 1em 1em 1em;
+}
+.card__image img{
+    display:block;
+    @media screen and (max-width: 800px){
+      width:100vw;
+    }
+    @media screen and (min-width:800px) and (max-width:1200px){
+      width:50vw;
+    }  
+    @media screen and (min-width:1200px){
+      width:600px;
+    } 
+  }
+.card__item:nth-child(2) .card__content{
+    margin-left: 0;
+    margin-right:($gutter/2);
+}
+.card__item:nth-child(2) .card__content{
+    margin-left: ($gutter/2);
+    margin-right:0;
+}
+
+.card__item:nth-child(1) img{
+    padding-left:($gutter/2);
+    margin-right:auto;
+}
+.card__item:nth-child(2) img{
+    margin-left:auto;
+    padding-right:($gutter/2);
+}

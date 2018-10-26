@@ -1,0 +1,34 @@
+.footer__bg{
+    background: $cUglyPink;
+    width: 100vw;
+}
+
+.footer {
+    max-width: $abs-max-width;
+    display:flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    padding: $gutter $gutter;
+  }
+  .footer__col{
+    @media screen and (max-width: $break-medium){
+        width: 50%;
+    }
+    @media screen and (min-width: $break-medium){
+        width: 25%;
+    }
+    
+    margin: 0 auto;
+    
+  }
+  .footer__link{
+      color: $cUglyYellow;
+  }
+  .footer_copyright{
+    
+    text-align: center;
+  }
+  
