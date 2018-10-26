@@ -48,6 +48,12 @@
     width:600px;
   }  
 }
+.card__content h2{
+  margin-bottom:$gutter*2;
+}
+.card__content p{
+  margin-bottom:$gutter;
+}
 .card__content button{
     width:fit-content;
     padding: 1em 1em 1em 1em;

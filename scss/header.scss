@@ -9,6 +9,7 @@
     justify-content: center;
     display: flex;
     margin:0 auto;
+    padding-top:$gutter;
     padding-bottom:$gutter;
 }
 .header__container{
@@ -17,9 +18,16 @@
     margin: 0 auto;
     padding-bottom:$gutter;
     font-weight:bold;
+    @media screen and (max-width:$break-small){
+      justify-content: center;
+      flex-wrap:wrap;
+    }
 }
   .nav__left{
     display: flex;
+    @media screen and (max-width:$break-small){
+      width:0;
+    }
     width:33.33vw;
   }
   .nav__menu{
@@ -29,6 +37,10 @@
     align-self: center;
     justify-content: center;
     width:33.33vw;
+    @media screen and (max-width:$break-small){
+      width:100%;
+      margin: 0 auto;
+    }
   }
   .nav__menu ul{
     display:flex;
@@ -41,7 +53,10 @@
   }
   .nav__right{
     display: flex;
-    width:33.33vw
+    width:33.33vw;
+    @media screen and (max-width:$break-small){
+      width:100%;
+    }
   }
   .cart__link{
     margin-left:auto;
@@ -50,5 +65,8 @@
     background-position: 0px 50%;
     background-size: 20%;
     background-repeat: no-repeat;
+    @media screen and (max-width:$break-small){
+      margin: $gutter/2 auto; 
+    }
   }
   
